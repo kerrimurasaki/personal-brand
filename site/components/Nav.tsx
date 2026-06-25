@@ -24,12 +24,7 @@ export default function Nav() {
           <a href="#about" className={linkClass}>About</a>
           <a href="#writing" className={linkClass}>Writing</a>
           <a href="#talks" className={linkClass}>Talks</a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md transition hover:border-white/60 hover:bg-white/20"
-          >
-            Get in touch
-          </a>
+          <a href="#contact" className="btn btn-ghost-light !py-2 !px-4 !text-sm">Get in touch</a>
         </div>
       </div>
     </nav>
