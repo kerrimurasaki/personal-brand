@@ -12,18 +12,19 @@ export default function Hero() {
 
       <div className="relative z-10 container-refined flex min-h-[100svh] flex-col justify-end pb-24 pt-40 md:pb-32">
         <p className="eyebrow rise rise-1 !text-[#d4b896]">
-          AI Literacy · Education · Building in Public
+          Cognitive Effort · Assessment · AI Literacy
         </p>
         <h1 className="rise rise-2 mt-6 max-w-4xl !text-white">
-          Teaching the next generation to think clearly in the age of AI.
+          Output is no longer a reliable signal of capability.
         </h1>
         <p className="rise rise-3 mt-8 max-w-2xl text-lg leading-relaxed text-white/80">
-          I design tools, workshops, and curricula that help young people use AI as a
-          thinking partner — not a shortcut.
+          I help educators, L&amp;D leaders, and operators preserve the cognitive effort
+          that AI assistance can quietly replace. Start with a 10-minute diagnostic that
+          maps where a learner or professional sits across the dimensions AI cannot replicate.
         </p>
         <div className="rise rise-4 mt-10 flex flex-wrap items-center gap-4">
-          <a href="#contact" className="btn btn-brand">Book a workshop</a>
-          <a href="#writing" className="btn btn-ghost-light">Read recent writing →</a>
+          <a href="#spectrum" className="btn btn-brand">Take the S+A Spectrum</a>
+          <a href="#frameworks" className="btn btn-ghost-light">Read the frameworks →</a>
         </div>
       </div>
     </section>

@@ -1,8 +1,10 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Work from "@/components/Work";
+import Frameworks from "@/components/Frameworks";
+import Spectrum from "@/components/Spectrum";
 import Services from "@/components/Services";
+import Work from "@/components/Work";
 import Writing from "@/components/Writing";
 import Talks from "@/components/Talks";
 import Testimonials from "@/components/Testimonials";
@@ -17,8 +19,10 @@ export default function Page() {
         <Hero />
       </div>
       <About />
-      <Work />
+      <Frameworks />
+      <Spectrum />
       <Services />
+      <Work />
       <Writing />
       <Talks />
       <Testimonials />

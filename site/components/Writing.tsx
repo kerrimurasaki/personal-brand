@@ -1,34 +1,34 @@
 const posts = [
   {
     date: "Jun 2026",
-    title: "Why I make my students answer before they ask the AI.",
-    dek: "A small classroom rule with outsized effects on how students engage with generative tools.",
+    title: "Output is not capability. It used to be a useful shortcut. It isn't anymore.",
+    dek: "Why every assessment, hiring loop, and L&D programme is now downstream of a measurement problem we haven't named.",
   },
   {
     date: "May 2026",
-    title: "AI literacy isn't a curriculum — it's a posture.",
-    dek: "Why the most important AI skills are habits of attention, not lists of facts.",
+    title: "What MPEM actually measures, and why it isn't the essay.",
+    dek: "Evaluative mastery is the part of expertise that AI can't generate. Here's how to grade for it.",
   },
   {
     date: "Apr 2026",
-    title: "What SpeakMesh taught me about feedback loops in learning.",
-    dek: "Six months of building a speaking-practice tool, and what surprised me about teenage learners.",
+    title: "The HAQ Profile: a vocabulary for AI capability that survives the boardroom.",
+    dek: "Most AI-readiness frameworks measure tool usage. The HAQ Profile measures something harder.",
   },
   {
     date: "Mar 2026",
-    title: "The quiet cost of \"just ask ChatGPT\".",
-    dek: "What we lose when we outsource the first draft of every thought.",
+    title: "The quiet cost of \"just ask the AI\".",
+    dek: "What we lose when we outsource the first draft of every thought — and how to design against it.",
   },
 ];
 
 export default function Writing() {
   return (
-    <section id="writing" className="section" style={{ background: "var(--bg-neutral-secondary-soft)" }}>
+    <section id="writing" className="section" style={{ background: "var(--bg-neutral-primary-soft)" }}>
       <div className="container-refined">
         <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
           <div>
             <p className="eyebrow">Writing</p>
-            <h2 className="mt-4 max-w-2xl">Notes on learning, teaching, and AI.</h2>
+            <h2 className="mt-4 max-w-2xl">Essays on cognition, assessment, and the work AI cannot do.</h2>
           </div>
           <a href="#" className="link-brand text-sm">All essays →</a>
         </div>

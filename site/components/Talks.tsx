@@ -1,17 +1,18 @@
 const talks = [
-  { date: "Aug 2026", venue: "EdTech Asia Summit", topic: "Thinking with AI: A literacy framework for K–12", status: "Upcoming" },
+  { date: "Aug 2026", venue: "EdTech Asia Summit", topic: "Assessment in the AI era: an MPEM-based redesign", status: "Upcoming" },
+  { date: "Jun 2026", venue: "ASEAN L&D Leaders Forum", topic: "The HAQ Profile: capability vocabulary for AI-augmented teams", status: "Upcoming" },
   { date: "May 2026", venue: "Singapore Teachers' Conference", topic: "Designing AI-resilient assessments", status: "Past" },
-  { date: "Mar 2026", venue: "NUS School of Computing", topic: "Building SpeakMesh: AI feedback at classroom scale", status: "Past" },
-  { date: "Nov 2025", venue: "AI for Good (Youth Track)", topic: "Why young people need AI literacy, not AI fear", status: "Past" },
+  { date: "Mar 2026", venue: "NUS School of Computing", topic: "What we mean when we say AI literacy", status: "Past" },
+  { date: "Nov 2025", venue: "AI for Good (Youth Track)", topic: "Cognitive effort and the next generation", status: "Past" },
 ];
 
 export default function Talks() {
   return (
-    <section id="talks" className="section" style={{ background: "var(--bg-neutral-primary-soft)" }}>
+    <section id="talks" className="section" style={{ background: "var(--bg-neutral-secondary-soft)" }}>
       <div className="container-refined">
         <div className="mb-14 max-w-3xl">
           <p className="eyebrow">Talks & Workshops</p>
-          <h2 className="mt-4">Where I&apos;ve been speaking recently.</h2>
+          <h2 className="mt-4">Recent and upcoming engagements.</h2>
         </div>
 
         <div className="card overflow-hidden">
@@ -25,7 +26,7 @@ export default function Talks() {
               </tr>
             </thead>
             <tbody>
-              {talks.map((t, i) => (
+              {talks.map((t) => (
                 <tr key={t.topic} style={{ borderTop: "1px solid var(--border-default)" }}>
                   <td className="px-8 py-6 text-sm" style={{ color: "var(--fg-body)" }}>{t.date}</td>
                   <td className="px-8 py-6 text-sm font-medium" style={{ color: "var(--fg-heading)" }}>{t.venue}</td>

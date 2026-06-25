@@ -20,10 +20,10 @@ export default function Nav() {
           Kerri Murasaki
         </a>
         <div className="hidden items-center gap-7 md:flex">
-          <a href="#work" className={linkClass}>Work</a>
-          <a href="#about" className={linkClass}>About</a>
+          <a href="#frameworks" className={linkClass}>Frameworks</a>
+          <a href="#services" className={linkClass}>Engagements</a>
           <a href="#writing" className={linkClass}>Writing</a>
-          <a href="#talks" className={linkClass}>Talks</a>
+          <a href="#about" className={linkClass}>About</a>
           <a href="#contact" className="btn btn-ghost-light !py-2 !px-4 !text-sm">Get in touch</a>
         </div>
       </div>
