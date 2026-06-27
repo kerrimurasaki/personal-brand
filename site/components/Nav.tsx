@@ -1,15 +1,15 @@
 export default function Nav() {
   const linkClass =
-    "text-sm font-medium text-white hover:text-[#d4b896] transition";
+    "text-sm font-semibold text-white hover:text-[#d4b896] transition drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)]";
 
   return (
     <nav className="absolute inset-x-0 top-0 z-20">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 h-32"
+        className="pointer-events-none absolute inset-x-0 top-0 h-44"
         style={{
           background:
-            "linear-gradient(180deg, rgba(9,9,11,0.6) 0%, rgba(9,9,11,0.3) 60%, transparent 100%)",
+            "linear-gradient(180deg, rgba(9,9,11,0.78) 0%, rgba(9,9,11,0.55) 40%, rgba(9,9,11,0.25) 75%, transparent 100%)",
         }}
       />
       <div className="container-refined relative grid grid-cols-2 items-center py-6 md:grid-cols-3">
@@ -45,10 +45,7 @@ export default function Nav() {
 
         {/* Right: secondary + primary CTA */}
         <div className="hidden items-center justify-end gap-3 md:flex">
-          <a
-            href="#spectrum"
-            className="text-sm font-medium text-white hover:text-[#d4b896] transition"
-          >
+          <a href="#spectrum" className={linkClass}>
             S+A Spectrum
           </a>
           <a
