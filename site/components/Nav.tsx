@@ -1,30 +1,21 @@
+import Logo from "./Logo";
+
 export default function Nav() {
   const linkClass =
-    "text-sm font-medium text-white/95 hover:text-white transition relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-[#d4b896] hover:after:w-full after:transition-all after:duration-300";
+    "text-sm font-medium transition relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-[color:var(--fg-brand)] hover:after:w-full after:transition-all after:duration-300";
 
   return (
-    <nav className="absolute inset-x-0 top-0 z-20">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 h-32"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(9,9,11,0.55) 0%, rgba(9,9,11,0.25) 60%, transparent 100%)",
-        }}
-      />
-      <div className="container-refined relative flex items-center justify-between py-6">
-        <a
-          href="#"
-          className="font-serif text-lg font-semibold tracking-tight text-white drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]"
-        >
-          Kerri Murasaki
+    <nav className="sticky top-0 z-30 backdrop-blur-xl" style={{ background: "rgba(255,255,255,0.72)", borderBottom: "1px solid var(--border-default-subtle)" }}>
+      <div className="container-refined relative flex items-center justify-between py-4">
+        <a href="#">
+          <Logo size={28} />
         </a>
         <div className="hidden items-center gap-7 md:flex">
-          <a href="#frameworks" className={linkClass}>Frameworks</a>
-          <a href="#services" className={linkClass}>Engagements</a>
-          <a href="#writing" className={linkClass}>Writing</a>
-          <a href="#about" className={linkClass}>About</a>
-          <a href="#contact" className="btn btn-ghost-light !py-2 !px-4 !text-sm">Get in touch</a>
+          <a href="#frameworks" className={linkClass} style={{ color: "var(--fg-heading)" }}>Frameworks</a>
+          <a href="#services" className={linkClass} style={{ color: "var(--fg-heading)" }}>Engagements</a>
+          <a href="#writing" className={linkClass} style={{ color: "var(--fg-heading)" }}>Writing</a>
+          <a href="#about" className={linkClass} style={{ color: "var(--fg-heading)" }}>About</a>
+          <a href="#contact" className="btn btn-pill btn-brand !py-2 !px-4 !text-sm">Get in touch</a>
         </div>
       </div>
     </nav>

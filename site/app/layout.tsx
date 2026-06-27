@@ -1,25 +1,18 @@
 import type { Metadata } from "next";
-import { Newsreader, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const newsreader = Newsreader({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-newsreader",
-  display: "swap",
-});
-
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-jakarta",
+  variable: "--font-inter",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Kerri Murasaki — AI Literacy Advocate",
   description:
-    "Teaching the next generation to think clearly in the age of AI. Workshops, products, and writing on AI literacy for young learners.",
+    "Preserving the cognitive effort that AI assistance can quietly replace. Frameworks, workshops, and advisory for educators, L&D leaders, and operators.",
 };
 
 export default function RootLayout({
@@ -28,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${newsreader.variable} ${jakarta.variable}`}>
+    <html lang="en" className={inter.variable}>
       <body>{children}</body>
     </html>
   );
