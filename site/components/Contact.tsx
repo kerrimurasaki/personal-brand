@@ -3,19 +3,19 @@ export default function Contact() {
     <section
       id="contact"
       className="section relative overflow-hidden"
-      style={{ background: "#09090b" }}
+      style={{ background: "#0b1220" }}
     >
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 60% at 20% 30%, rgba(184,149,106,0.25) 0%, transparent 60%), radial-gradient(40% 40% at 80% 80%, rgba(184,149,106,0.18) 0%, transparent 70%)",
+            "radial-gradient(60% 60% at 20% 30%, rgba(33,121,189,0.30) 0%, transparent 60%), radial-gradient(40% 40% at 80% 80%, rgba(178,84,212,0.18) 0%, transparent 70%)",
         }}
       />
       <div className="container-refined relative">
         <div className="max-w-3xl">
-          <p className="eyebrow !text-[#d4b896]">Work With Me</p>
+          <p className="eyebrow !text-[#6db1e3]">Work With Me</p>
           <h2 className="mt-6 !text-white">
             For faculties, L&amp;D teams, and operators ready to design for the work AI cannot do.
           </h2>

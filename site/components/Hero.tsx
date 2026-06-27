@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0 hero-overlay" />
 
       <div className="relative z-10 container-refined flex min-h-[100svh] flex-col justify-end pb-24 pt-40 md:pb-32">
-        <p className="eyebrow rise rise-1 !text-[#d4b896]">
+        <p className="eyebrow rise rise-1 !text-[#6db1e3]">
           Cognitive Effort · Assessment · AI Literacy
         </p>
         <h1 className="rise rise-2 mt-6 max-w-4xl !text-white">
