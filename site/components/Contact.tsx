@@ -15,11 +15,13 @@ export default function Contact() {
       />
       <div className="container-refined relative">
         <div className="max-w-3xl">
-          <p className="eyebrow !text-[#d4b896]">Get in Touch</p>
-          <h2 className="mt-6 !text-white">Let&apos;s build something thoughtful.</h2>
+          <p className="eyebrow !text-[#d4b896]">Work With Me</p>
+          <h2 className="mt-6 !text-white">
+            For faculties, L&amp;D teams, and operators ready to design for the work AI cannot do.
+          </h2>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/70">
-            Workshops, talks, advisory, or just a good conversation about AI and learning —
-            I read every email.
+            Institutional partnerships, workshops, advisory retainers, or a short conversation
+            to see if the frameworks fit your context — start with an email.
           </p>
 
           <div className="mt-12 flex flex-wrap items-center gap-4">

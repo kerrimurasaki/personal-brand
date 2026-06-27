@@ -6,27 +6,34 @@ export default function About() {
           <div>
             <p className="eyebrow">About</p>
             <h2 className="mt-4 max-w-3xl">
-              An educator and product builder working at the intersection of AI and learning.
+              The production barrier has collapsed. The work that remains is upstream of production.
             </h2>
             <div className="mt-10 space-y-6 text-[17px] leading-relaxed" style={{ color: "var(--fg-body)", maxWidth: "62ch" }}>
               <p>
-                I&apos;m Kerri — I run workshops on AI literacy for youths, design
-                EdTech products like <a className="link-brand" href="#work">SpeakMesh</a> and{" "}
-                <a className="link-brand" href="#work">ThinkFirst</a>, and write about what it
-                means to learn well when machines can think alongside us.
+                I&apos;m Kerri — I work across assessment, learning design, and workforce
+                development in a moment when AI assistance can produce plausible work in seconds.
+                The questions I care about are downstream of one shared problem: how do we
+                distinguish the cognition that produces work from the work itself?
               </p>
               <p>
-                My belief is simple: AI shouldn&apos;t replace the hard work of thinking — it
-                should make that work richer, more curious, and more accessible to every learner.
-                The most important question of this decade isn&apos;t <em>what can AI do</em>,
-                but <em>what becomes of us if we stop doing it ourselves</em>.
+                That distinction used to be safe to ignore. A finished essay implied a thinking
+                writer; a working prototype implied a competent builder. It doesn&apos;t anymore.
+                The durable human work is now upstream — in judgment, verification, evaluative
+                mastery, and the kind of effort that a frictionless AI workflow can quietly
+                replace if no one designs against it.
+              </p>
+              <p>
+                The frameworks on this site — the <strong>S+A Spectrum</strong>, the{" "}
+                <strong>HAQ Profile</strong>, and <strong>MPEM</strong> — are three angles on that
+                same problem, built for educators, L&amp;D professionals, and operators who want
+                a defensible vocabulary for the difference between performance and competence.
               </p>
             </div>
             <div className="mt-10 flex flex-wrap gap-2">
-              <span className="badge">AI Literacy</span>
-              <span className="badge badge-neutral">EdTech</span>
-              <span className="badge badge-neutral">Curriculum Design</span>
-              <span className="badge badge-neutral">Speaking</span>
+              <span className="badge">Assessment in the AI era</span>
+              <span className="badge badge-neutral">Workforce capability</span>
+              <span className="badge badge-neutral">AI literacy</span>
+              <span className="badge badge-neutral">ASEAN</span>
             </div>
           </div>
 
@@ -43,7 +50,7 @@ export default function About() {
               />
             </div>
             <p className="mt-4 text-sm" style={{ color: "var(--fg-body-subtle)" }}>
-              Based in Singapore · Available worldwide
+              Based in Singapore · Working across ASEAN and beyond
             </p>
           </aside>
         </div>
