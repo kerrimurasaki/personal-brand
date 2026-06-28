@@ -1,57 +1,22 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 export default function Nav() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 64);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const linkClass = scrolled
-    ? "text-sm font-semibold text-[#09090b] hover:text-[#96734d] transition"
-    : "text-sm font-semibold text-white hover:text-[#d4b896] transition drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)]";
-
-  const logoTextClass = scrolled
-    ? "font-serif text-lg font-semibold tracking-tight text-[#09090b]"
-    : "font-serif text-lg font-semibold tracking-tight text-white";
+  const linkClass =
+    "text-sm font-medium text-white/65 hover:text-white transition-colors";
 
   return (
     <nav
-      className={
-        "fixed inset-x-0 top-0 z-20 transition-all duration-300" +
-        (scrolled
-          ? " bg-white/90 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]"
-          : " bg-transparent")
-      }
+      className="fixed inset-x-0 top-0 z-20"
+      style={{ background: "#09090b", borderBottom: "1px solid rgba(255,255,255,0.06)" }}
     >
-      {!scrolled && (
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 h-44"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(9,9,11,0.78) 0%, rgba(9,9,11,0.55) 40%, rgba(9,9,11,0.25) 75%, transparent 100%)",
-          }}
-        />
-      )}
-      <div className="container-refined relative grid grid-cols-2 items-center py-6 md:grid-cols-3">
+      <div className="container-refined relative grid grid-cols-2 items-center py-3.5 md:grid-cols-3">
         {/* Left: icon + wordmark */}
         <a
           href="#"
-          className={
-            "flex items-center gap-2.5 transition-all duration-300" +
-            (scrolled ? "" : " drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]")
-          }
+          className="flex items-center gap-2.5"
           aria-label="Kerri Murasaki — home"
         >
           <span
             aria-hidden
-            className="grid h-9 w-9 place-items-center rounded-full font-serif text-base font-semibold"
+            className="grid h-8 w-8 place-items-center rounded-full font-serif text-sm font-semibold"
             style={{
               background: "var(--bg-brand)",
               color: "#0a0a0c",
@@ -60,7 +25,9 @@ export default function Nav() {
           >
             K
           </span>
-          <span className={logoTextClass}>Kerri Murasaki</span>
+          <span className="font-serif text-base font-semibold tracking-tight text-white">
+            Kerri Murasaki
+          </span>
         </a>
 
         {/* Center: nav links */}
