@@ -1,6 +1,6 @@
 export default function Nav() {
   const linkClass =
-    "text-sm font-medium text-white/65 hover:text-white transition-colors";
+    "text-sm font-semibold text-white/85 hover:text-[#d4b896] transition-colors";
 
   return (
     <nav
