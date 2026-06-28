@@ -1,22 +1,52 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function Nav() {
-  const linkClass =
-    "text-sm font-semibold text-white hover:text-[#d4b896] transition drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)]";
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 64);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const linkClass = scrolled
+    ? "text-sm font-semibold text-[#09090b] hover:text-[#96734d] transition"
+    : "text-sm font-semibold text-white hover:text-[#d4b896] transition drop-shadow-[0_1px_3px_rgba(0,0,0,0.65)]";
+
+  const logoTextClass = scrolled
+    ? "font-serif text-lg font-semibold tracking-tight text-[#09090b]"
+    : "font-serif text-lg font-semibold tracking-tight text-white";
 
   return (
-    <nav className="absolute inset-x-0 top-0 z-20">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 h-44"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(9,9,11,0.78) 0%, rgba(9,9,11,0.55) 40%, rgba(9,9,11,0.25) 75%, transparent 100%)",
-        }}
-      />
+    <nav
+      className={
+        "fixed inset-x-0 top-0 z-20 transition-all duration-300" +
+        (scrolled
+          ? " bg-white/90 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]"
+          : " bg-transparent")
+      }
+    >
+      {!scrolled && (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 h-44"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(9,9,11,0.78) 0%, rgba(9,9,11,0.55) 40%, rgba(9,9,11,0.25) 75%, transparent 100%)",
+          }}
+        />
+      )}
       <div className="container-refined relative grid grid-cols-2 items-center py-6 md:grid-cols-3">
         {/* Left: icon + wordmark */}
         <a
           href="#"
-          className="flex items-center gap-2.5 drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]"
+          className={
+            "flex items-center gap-2.5 transition-all duration-300" +
+            (scrolled ? "" : " drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]")
+          }
           aria-label="Kerri Murasaki — home"
         >
           <span
@@ -30,9 +60,7 @@ export default function Nav() {
           >
             K
           </span>
-          <span className="font-serif text-lg font-semibold tracking-tight text-white">
-            Kerri Murasaki
-          </span>
+          <span className={logoTextClass}>Kerri Murasaki</span>
         </a>
 
         {/* Center: nav links */}
